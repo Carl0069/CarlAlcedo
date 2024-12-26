@@ -1,0 +1,371 @@
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --navbar-bg: #f2f2f2;
+    --navbar-text: #000000;
+    --button-bg: #333333;
+    --button-text: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #2A2A2A;
+    --text-color: #f2f2f2;
+    --navbar-bg: #552583;
+    --navbar-text: #FDB927;
+    --button-bg: #FFD700;
+    --button-text: #6A1B9A;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--navbar-bg);
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: var(--navbar-text);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: var(--button-bg);
+}
+
+/* Dark/Light Mode Toggle */
+.theme-toggle {
+    margin-left: auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.theme-toggle:hover {
+    background-color: var(--button-text);
+    color: var(--button-bg);
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+form button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: var(--button-text);
+    color: var(--button-bg);
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* General font for the website */
+    background-color: #2A2A2A; /* Dark background */
+    color: #f2f2f2; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling - Lakers Theme */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #552583; /* Lakers Purple */
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #FDB927; /* Lakers Gold */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #FF8C00; /* Orange hover effect */
+}
+
+/* Homepage Section */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFD700; /* Gold heading */
+    text-transform: uppercase;
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Destination Styling */
+.destination {
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Destination 1 - Cleveland Cavaliers Theme */
+.destination:nth-child(1) {
+    background-color: #6F263D; /* Wine Red */
+    color: #FFB81C; /* Gold */
+    border: 2px solid #041E42; /* Navy Blue */
+}
+
+/* Destination 2 - Miami Heat Theme */
+.destination:nth-child(2) {
+    background-color: #98002E; /* Heat Red */
+    color: #F9A01B; /* Yellow-Gold */
+    border: 2px solid #000000; /* Black */
+}
+
+/* Destination 3 - Los Angeles Lakers Theme */
+.destination:nth-child(3) {
+    background-color: #552583; /* Lakers Purple */
+    color: #FDB927; /* Lakers Gold */
+    border: 2px solid #000000; /* Black */
+}
+
+/* Destination Images */
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.destination h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.destination p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+button.read-more {
+    background-color: #6A1B9A; /* General button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.read-more:hover {
+    background-color: #FFD700;
+    color: #6A1B9A;
+}
+
+/* About Section */
+.about {
+    background-color: #98002E; /* Heat Red */
+    color: #F9A01B; /* Yellow-Gold */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    color: #F9A01B; /* Yellow-Gold */
+    margin-bottom: 20px;
+}
+
+.about-image {
+    display: block;
+    max-width: 300px; /* Restricts the width of the image */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #6F263D; /* Cavaliers Wine Red */
+    color: #FFB81C; /* Gold */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #FFB81C; /* Gold */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label, form input, form textarea, form button {
+    width: 100%;
+    margin: 10px 0;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #FFB81C;
+    border-radius: 5px;
+    background-color: #333;
+    color: #FFB81C;
+}
+
+form button {
+    background-color: #98002E; /* Heat Red */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FFD700; /* Gold */
+    color: #98002E; /* Heat Red */
+}
+* Root Variables for Light and Dark Mode */
+:root {
+    --bg-color: #ffffff; /* Light background */
+    --text-color: #000000; /* Dark text */
+    --navbar-bg: #f2f2f2; /* Light navbar background */
+    --navbar-text: #000000; /* Dark navbar text */
+    --button-bg: #333333; /* Light button */
+    --button-text: #ffffff; /* Light button text */
+}
+
+[data-theme="dark"] {
+    --bg-color: #2A2A2A; /* Dark background */
+    --text-color: #f2f2f2; /* Light text */
+    --navbar-bg: #552583; /* Lakers Purple */
+    --navbar-text: #FDB927; /* Lakers Gold */
+    --button-bg: #FFD700; /* Gold button */
+    --button-text: #6A1B9A; /* Purple button text */
+}
+
+/* General Styling with Variables */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--navbar-bg);
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: var(--navbar-text);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: var(--button-bg);
+}
+
+/* Button for Toggle */
+.theme-toggle {
+    margin-left: auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.theme-toggle:hover {
+    background-color: var(--button-text);
+    color: var(--button-bg);
+}
+
+/* Adjust other styles for Light/Dark Mode */
+.about, .contact {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+form input, form textarea {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}

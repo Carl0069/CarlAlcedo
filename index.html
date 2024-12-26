@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">Toggle Mode</button>
+        </nav>
+        
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home" class="home">
+        <h1>Welcome to the Travel Blog</h1>
+        <div class="destinations">
+            <!-- Destination 1 - Cleveland -->
+            <div class="destination">
+                <img src="photo-Lebron-008.png" alt="Cleveland" />
+                <h2>Cleveland - The Chosen One</h2>
+                <p>Cleveland, the city that watched LeBron James rise from a high school phenom to an NBA legend. His iconic return in 2014 and the unforgettable 2016 championship win made Cleveland a basketball mecca.</p>
+                <button class="read-more" data-target="more-info1">Read More</button>
+                <div id="more-info1" class="more-info">
+                    <p>LeBron's impact on Cleveland is undeniable. From his first stint with the Cavaliers, leading them to the NBA Finals in 2007, to his heroic Game 7 performance in 2016 that brought the city its first championship, Cleveland is forever intertwined with LeBron’s legacy. Visit the Rock and Roll Hall of Fame, catch a Cavs game, and feel the city’s pride for its King.</p>
+                </div>
+            </div>
+
+            <!-- Destination 2 - Miami -->
+            <div class="destination">
+                <img src="136720666.jpg.0.jpg" alt="Miami" />
+                <h2>Miami - The Decision </h2>
+                <p>Miami became the stage for LeBron's next chapter in his career, where he joined forces with Dwyane Wade and Chris Bosh to form the Heat's "Big Three." His time in Miami was filled with championships and unforgettable moments.</p>
+                <button class="read-more" data-target="more-info2">Read More</button>
+                <div id="more-info2" class="more-info">
+                    <p>LeBron's decision to take his talents to South Beach in 2010 changed the landscape of the NBA. In Miami, LeBron won two championships (2012, 2013), solidifying his legacy as one of the game’s greatest players. Explore the vibrant city, enjoy the beaches, and pay homage to the place where LeBron elevated his game to new heights.</p>
+                </div>
+            </div>
+
+            <!-- Destination 3 - Los Angeles -->
+            <div class="destination">
+                <img src="854_02122022_lakers_warriors_jacobsohn_0162-ts.jpg" alt="Los Angeles" />
+                <h2>Los Angeles - The Legacy Continues</h2>
+                <p>LeBron James took his talents to Los Angeles in 2018, where he became the face of the Lakers and continued to build his legendary career. LA became the perfect place for LeBron to extend his influence both on and off the court.</p>
+                <button class="read-more" data-target="more-info3">Read More</button>
+                <div id="more-info3" class="more-info">
+                    <p>In Los Angeles, LeBron led the Lakers to the 2020 NBA Championship, cementing his status as one of the greatest of all time. Beyond basketball, his impact in LA extends to film, activism, and business ventures. The city’s Hollywood aura matches LeBron’s larger-than-life presence, making it a must-visit destination for sports fans and culture seekers alike.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h1>About Us</h1>
+        <img src="449885735_1615773112538319_457600221651637331_n (1).jpg" alt="Travel Icon" class="about-image">
+        <p>Welcome to the ultimate travel blog inspired by greatness. Just like LeBron James has traveled through Cleveland, Miami, and Los Angeles to build a legacy, we aim to take you on a journey to iconic destinations that define excellence and inspire passion.</p>
+        <p><strong>Meet the Author:</strong> Carl Alcedo, a devoted basketball fan and travel enthusiast, combines his love for exploring new places with the inspiration drawn from LeBron’s incredible career. Join Carl in discovering destinations that are as legendary as The King himself.</p>
+    </section>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
